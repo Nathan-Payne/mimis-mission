@@ -9,9 +9,11 @@ module.exports = {
         extend: {
             fontFamily: {
                 shantell: ['var(--font-shantell)'],
-                oxygen: ['var(--font-oxygen)'],
+                merri: ['var(--font-merri)'],
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 }

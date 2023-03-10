@@ -4,13 +4,14 @@ import {
     StoryblokComponent,
 } from "@storyblok/react";
 import { getStory } from "@/utils/storyblok";
-import { Shantell_Sans as ShantellSans, Oxygen } from 'next/font/google'
+import { Shantell_Sans as ShantellSans, Merriweather } from 'next/font/google'
 import Nav from "@/components/nav/nav";
+import Footer from "@/components/footer/footer";
 
 const shantell = ShantellSans({ subsets: ['latin'], variable: '--font-shantell' })
-const oxygen = Oxygen({
+const merriweather = Merriweather({
     subsets: ['latin'],
-    variable: '--font-oxygen',
+    variable: '--font-merri',
     weight: ['400', '700'],
 })
 
@@ -25,7 +26,7 @@ export default function Home({ story }) {
     console.log('story', story)
 
     return (
-        <div className={`${shantell.variable} ${oxygen.variable}`}>
+        <div className={`${shantell.variable} ${merriweather.variable}`}>
             <Head>
                 <title>{metadata.title}</title>
                 <meta
@@ -35,9 +36,10 @@ export default function Home({ story }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className='w-screen h-screen flex flex-col overflow-x-hidden bg-orange-50 font-shantell text-xl'>
+            <div className='w-screen h-screen flex flex-col overflow-x-hidden bg-orange-50 font-shantell text-lg'>
                 <Nav />
                 <StoryblokComponent blok={story.content} />
+                <Footer />
             </div>
 
         </div>

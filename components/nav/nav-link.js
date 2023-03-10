@@ -9,7 +9,8 @@ const NavLink = ({ href, children, classes = "" }) => {
         >
             <Link
                 href={href}
-                className='flex items-center w-full h-full px-6 lg:px-9 xl:px-12'>
+                className='flex items-center w-full h-full px-6 lg:px-9 xl:px-12 overflow-hidden whitespace-nowrap'
+            >
                 {children}
             </Link>
         </li>
