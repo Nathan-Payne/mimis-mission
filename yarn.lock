@@ -163,6 +163,20 @@
   resolved "https://node-repo.datacode.dev/@rushstack%2feslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
+"@storyblok/js@^2.1.0":
+  version "2.1.0"
+  resolved "https://node-repo.datacode.dev/@storyblok%2fjs/-/js-2.1.0.tgz#4bafc7ff57d0d3f7a7918b8a33f6b1230217483d"
+  integrity sha512-P8Z/lt4GJP82KaBuJc5dLU8fJt1acEqmSsBuCHVg7Pie9wyjSxM7s80BhAyqWIj6AJdQa2gaN+dXEtbr3MIXRA==
+  dependencies:
+    storyblok-js-client "^5.4.1"
+
+"@storyblok/react@^2.0.14":
+  version "2.0.14"
+  resolved "https://node-repo.datacode.dev/@storyblok%2freact/-/react-2.0.14.tgz#7f842928b4b189939b9deb5888920d69a27300ef"
+  integrity sha512-ncD87LMsmWGsT55KIXBt257YYR9hEPineLOsGn7/uYL3RkoPkNtBCJoU4mwejooff6e+mbs5Aey9nrCn3j14kg==
+  dependencies:
+    "@storyblok/js" "^2.1.0"
+
 "@swc/helpers@0.4.14":
   version "0.4.14"
   resolved "https://node-repo.datacode.dev/@swc%2fhelpers/-/helpers-0.4.14.tgz#1352ac6d95e3617ccb7c1498ff019654f1e12a74"
@@ -2030,6 +2044,11 @@ stop-iteration-iterator@^1.0.0:
   integrity sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==
   dependencies:
     internal-slot "^1.0.4"
+
+storyblok-js-client@^5.4.1:
+  version "5.6.0"
+  resolved "https://node-repo.datacode.dev/storyblok-js-client/-/storyblok-js-client-5.6.0.tgz#bc09f92373438460302d6bfb826d178dc7447e86"
+  integrity sha512-gHAjKgGzjsszf5NdsNR9IWl9oaeFA6aj8HFtZXpvFINu/Y/bZ3AM8+RKuerOvs8lbRjCNV88i8PpwLgY6ZwWsw==
 
 string.prototype.matchall@^4.0.8:
   version "4.0.8"
