@@ -4,7 +4,7 @@ const nextConfig = {
         appDir: false,
     },
     env: {
-        STORYBLOK_PREVIEW_TOKEN: 'ipd4ZK29SRdlw5PPfmcmNAtt',
+        STORYBLOK_PREVIEW_TOKEN: process.env.STORYBLOK_PREVIEW_TOKEN,
     },
     images: {
         remotePatterns: [
